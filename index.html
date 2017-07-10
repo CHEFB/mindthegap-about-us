@@ -1,4 +1,4 @@
-<html> 
+html> 
 <html lang = "en">
 <head>
 	<meta charset = "utf-8">
@@ -33,14 +33,11 @@
     position: absolute;
     padding: 1.5rem;
     color: #fff;
-
 }
-
 .button-collapse:hover {
 color: #fff;
     
 }
-
 body{
     background-image: url("http://kaba35.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg");
     background-size: 100% 100%;
@@ -51,12 +48,12 @@ h1{color: black;
 	font-size:100px;
 	} 
 p.p1{color:#028482;
-	font-size: 30px;
+	font-size: 20px;
 	font-style: italic;
 	font-family: "Orbitron", sans-serif;;
 }
 p.p2{color:black;
-	font-size: 20px;
+	font-size: 10px;
 	font-style: oblique;
 	font-family: "Orbitron", sans-serif;;
 	
@@ -66,7 +63,6 @@ p.p3{color:white;
 	font-style: italic;
     font-family: "Orbitron", sans-serif;
 }
-
 h2{color:maroon;
 	font-style: oblique;
 	font-family: "Orbitron", sans-serif;
@@ -83,7 +79,6 @@ h4{color:white;
 	font-style: italic;
 	font-size:100px
 	} 
-
 /* selected link */
 a:active {
     color: white;
@@ -94,7 +89,6 @@ div.header{
     background-size: 100% 100%;
     color: black;
     text-align:center;
-
 	
 }
 div.body{
@@ -116,27 +110,22 @@ div.pictures{
     width: 50%;
     position: relative;
 }
-
-
 div.pics{
     border: 5px double white;
     position: center;
-    left:110px;
+    left:90px;
     width: auto;
     height: auto;
     margin: 0 auto;
-    position: relative;
 }
 	
 nav.navbar navbar-inverse{
 	height:700px
 	}
 	
-
-
-
 </style>
 </head>
+
 <body>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -170,9 +159,9 @@ nav.navbar navbar-inverse{
 
 <div class = "pictures">
     <div class = "pics">
-	    <img class = "behind" src="https://nhtampabay.files.wordpress.com/2013/04/4b97215pga6slp662k3p.jpeg" width="120" height="100">
-	    <img class = "behind" src="http://www.likeabossgirls.com/wp-content/uploads/2015/06/girlswhocodegwc-logo.png" width="320" height="100">
-	    <img class = "behind" src="https://nhtampabay.files.wordpress.com/2013/04/4b97215pga6slp662k3p.jpeg" width="120" height="100">
+	    <img class = "behind" src="https://nhtampabay.files.wordpress.com/2013/04/4b97215pga6slp662k3p.jpeg" width="120" height="80" hspace = "20">
+	    <img class = "behind" src="http://www.likeabossgirls.com/wp-content/uploads/2015/06/girlswhocodegwc-logo.png" width="320" height="80" hspace = "20">
+       <img class = "behind" src="https://nhtampabay.files.wordpress.com/2013/04/4b97215pga6slp662k3p.jpeg" width="120" height="80" hspace = "20">
     </div>
 </div>
 
@@ -183,7 +172,19 @@ nav.navbar navbar-inverse{
 </p>
 </div>
 
-
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<script>
+<script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          scrollwheel: false,
+          zoom: 8
+        });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtMJzIoA4UPdMfJzHOPVNY105IKxBpeSg&callback=initMap" async defer></script>
 
 </body>
 </html>
